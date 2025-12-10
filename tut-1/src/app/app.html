@@ -1,0 +1,15 @@
+<button (click)="loadData()">get data</button>
+<button (click)="loaddataError()">get erorr</button>
+
+<div class="">
+    @for(ele of arr; track $index){
+        <p>{{ele}}</p>
+    }
+</div>
+
+<div class="">
+    @for(ele of arr2; track $index){
+        <p>{{ele}}</p>
+    }
+</div>
+<router-outlet />
