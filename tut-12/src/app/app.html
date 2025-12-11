@@ -1,0 +1,24 @@
+<h1>reduce() tab tak wait karta hai jab tak observable complete nahi ho jata.
+
+Aur jaise hi Observable complete hota hai → reduce final value emit karta hai.</h1>
+
+<h2>Totel value {{totel}}</h2>
+<button (click)="getFinalValue()" >get totel</button>
+<router-outlet />
+
+
+<button (click)="getName()">get names</button>
+@for(name of names;track $index){
+  <p>{{name}}</p>
+}
+
+<button (click)="getAge()">get age</button>
+@for(age of ages;track $index){
+  <p>{{age}}</p>
+}
+
+<hr>
+<button (click)="productTotel()">price</button>
+@if(price){
+  <h1>totel price : {{price}}</h1>
+}
