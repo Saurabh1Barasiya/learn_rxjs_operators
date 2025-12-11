@@ -1,0 +1,23 @@
+<h1>takeUntil</h1>
+<h1>It will emit the value until inner obevable emit the value.</h1>
+
+<h3>Inner observable ne kuch bhi bola ya complete hua → takeUntil ne main stream ko maar diya!</h3>
+
+
+<h3>Jese hi inner observable (jo takeUntil ke andar diya hai) emit karega – chahe kuch bhi emit kare (number, string,
+  object, void, error, ya complete) – waise hi main stream turant mar jaayega!</h3>
+
+<button (click)="fire()">click</button>
+@for(ele of nums;track $index){
+  <span>{{ele}} </span>
+}
+<hr>
+
+<button (click)="fireAgain()">fire Again</button>
+@for(ele of numsArr;track $index){
+  <span>{{ele}} </span>
+}
+
+<button (click)="emitsubject()">stop</button>
+
+<router-outlet />
