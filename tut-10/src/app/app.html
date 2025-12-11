@@ -1,0 +1,15 @@
+<button (click)="getNewData()">get data</button>
+@for(item of newdata;track $index){
+  <span>{{item}} </span>
+}
+<hr>
+<button (click)="getNames()">get names</button>
+@for(name of names;track $index){
+  <span>{{name}} </span>
+}
+
+<button (click)="getAge()">get Ages</button>
+@for(age of ages;track $index){
+  <span>{{age}} </span>
+}
+<router-outlet />
