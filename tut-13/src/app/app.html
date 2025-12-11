@@ -1,0 +1,24 @@
+<h1>takeWhile ka matlab hai:
+"Jab tak condition TRUE hai, tab tak values ko aage bhejta jaa... jaise hi condition FALSE ho gayi, bas band kar do!"</h1>
+
+
+<h3>Jaise bolte hain na —
+"Bhai 1000 rupaye tak hi shopping karunga, jaise hi total 1000 cross hua... bas band karo!" → yeh kaam takeWhile karta hai.</h3>
+
+<button (click)="getData()">get data</button>
+
+@for(item of nums;track $index){
+  <span>{{item}}, </span>
+}
+<router-outlet />
+
+
+<hr>
+<h3>inclusive: true → jis value ne rule toda, usko ek baar bhej dega, phir band</h3>
+<button (click)="getDataAgain()">get again</button>
+
+@for(item of numsAgain;track $index){
+  <span>{{item}}, </span>
+}
+
+<p>Yaha par 100 ne condition break ki but hamne inclusive ko true kiya h isiliye 100 output me aaya h </p>
