@@ -1,0 +1,28 @@
+<h1>interval() in RxJS — Simple Explanation</h1>
+<h3>interval(n) ek Observable create karta hai jo har n milliseconds me ek number emit karta hai.</h3>
+
+<button (click)="getData()" >get data</button>
+@for(ele of arr;track $index){
+  <span>{{ele}} </span>
+}
+
+<div class="">
+  <h2>Kaise Kaam Karta Hai?</h2>
+  <ul>
+    <li>Pehla value 0</li>
+    <li>Second value 1</li>
+    <li>Third value 2</li>
+    <li>… infinite values</li>
+    <li>Automatically kabhi stop nahi hota</li>
+    <li>(Jab tak aap khud unsubscribe na karo)</li>
+  </ul>
+</div>
+
+
+<button (click)="onlyThreeValues()">only take 3 value</button>
+@for(ele of arr2;track $index){
+  <span [ngStyle]="{'color':'red'}">{{ele}} </span>
+}
+<router-outlet />
+
+
