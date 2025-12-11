@@ -1,0 +1,28 @@
+<div class="">
+  <h3>Finalize Operator – Simple Explanation</h3>
+  <h5>
+    finalize() ek RxJS operator hai jo Observable band hone par hamesha chal jaata hai.</h5>
+
+  <h2>Observable ka band hona do tariko se hota hai:</h2>
+
+  <ul>
+    <li>✔ 1. complete() hone par</li>
+    <li>✔ 2. error() aane par</li>
+    <li>✔ 3. ya unsubscribe() hone par</li>
+  </ul>
+  <p>Teeno cases me finalize() guaranteed chal jayega.</p>
+  <p> 👉 Isko tum "finally block" ki tarah samajh lo.</p>
+</div>
+
+<button (click)="getData()">getData</button>
+@if(data){
+@for(item of data; track $index){
+<span>{{item}} </span>
+}
+}
+
+
+<button (click)="loadData()">loadData</button>
+<h5>see console to better output for secound buton.</h5>
+
+<router-outlet />
