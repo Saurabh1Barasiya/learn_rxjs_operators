@@ -1,0 +1,22 @@
+<button (click)="getLast()">get last value</button>
+
+@if(lastValue){
+<h1>last value is {{lastValue}}</h1>
+}
+<hr>
+<div class="">
+  <h3>lastValueFrom kya hota hai?</h3>
+  <h3>lastValueFrom() RxJS ka function hai jo:</h3>
+
+  <ul>
+    <li>✔ Observable ko Promise me convert karta hai</li>
+    <li>✔ Observable ke complete hone ka wait karta hai</li>
+    <li>✔ Aur last emitted value return karta hai</li>
+    <li>
+      Condition: Observable MUST complete.
+      Agar complete nahi hua → Error aa jayega.
+    </li>
+  </ul>
+</div>
+
+<router-outlet/>
