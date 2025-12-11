@@ -1,0 +1,8 @@
+<button (click)="getFirstValue()">get the first value from observable</button>
+
+@if(firstValue){
+  <h1>first value is {{firstValue}}</h1>
+}
+
+<h6>It will convert observable to promise and resolve that promise into first value , and skip other values</h6>
+<router-outlet />
