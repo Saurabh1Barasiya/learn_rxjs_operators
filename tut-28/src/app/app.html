@@ -1,0 +1,36 @@
+<h1>
+  distinctUntilChanged() =
+  "Ye operator consecutive duplicate values ko ignore karta hai aur sirf unique changes ko hi emit karta hai."
+</h1>
+
+
+<ul>
+  <h3>Consecutive Values:</h3>
+  <li>Ye sirf consecutive duplicate values check karta hai.</li>
+  <li>Agar same value thodi der baad firse aaye → fir se emit karega.</li>
+</ul>
+
+<ul>
+  <h3>Compare Rule:</h3>
+  <li>By default, === operator se compare karta hai.</li>
+  <li>Custom comparison function bhi de sakte ho.</li>
+</ul>
+
+<ul>
+  <h3>Useful For:</h3>
+  <li>Form inputs</li>
+  <li>Search text</li>
+  <li>Button clicks</li>
+  <li>Jahan hum repeated same values ignore karna chahte hain</li>
+</ul>
+
+<hr>
+
+<h2>Search Input Example</h2>
+
+<input #searchInput type="text" placeholder="Type to search..." />
+
+<p>Console me dekho: bar-bar same value emit nahi hogi (distinctUntilChanged)</p>
+
+<router-outlet />
+
