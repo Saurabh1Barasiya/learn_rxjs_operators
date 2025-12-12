@@ -1,0 +1,24 @@
+<h1>concatMap — Simple Explanation</h1>
+<h2>concatMap ek RxJS operator hai jo:</h2>
+<ul>
+  <li>Har value ke liye ek naya observable banata hai</li>
+  <li>But ek hi observable ko ek time pe chalne deta hai</li>
+  <li>Baaki sab queue me wait karte hain</li>
+  <li>Order 100% same rehta hai</li>
+</ul>
+
+<ul>
+  <h3>Real Life Example (Super Easy)</h3>
+  <h5>Imagine 3 log ek shop me line me khade hain.</h5>
+  <li>mergeMap → sab ek saath counter pe rush kar denge 🏃‍♂️🏃‍♂️🏃‍♂️</li>
+  <li>switchMap → agar naya banda aa gaya → pehla wala cancel ❌</li>
+  <li>concatMap → ek banda counter pe jaayega, kaam khatam → next banda → next banda ✔
+  </li>
+
+  <h6>Ek queue system ban jaata hai.</h6>
+</ul>
+
+
+<hr>
+<input type="text" #myinput placeholder="type here...">
+<router-outlet />
