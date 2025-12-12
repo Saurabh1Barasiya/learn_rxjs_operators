@@ -1,0 +1,46 @@
+<h3>"Jab bhi kisi bhi Observable me new value aaye, ye operator sabke latest values ko combine karke emit karta hai."
+</h3>
+
+
+
+
+
+
+
+
+<h3>
+  Initial Emit Rule:
+
+  Output tabhi pehli baar emit karega jab har Observable ne kam se kam 1 value emit ki ho.
+</h3>
+Latest Values Rule:
+
+Jab bhi koi Observable new value emit kare → output me sabhi Observables ki latest values combine ho kar aayengi.
+
+<h3>
+
+  Order Rule:
+
+  Output me values ka order wahi rahega jo array me diya gaya hai.
+</h3>
+
+<h3>
+  Continuous Update Rule:
+
+  Har naye value ke saath → output automatically update hota hai.
+</h3>
+
+<hr>
+
+<h2>combineLatest Example</h2>
+
+<button (click)="changeName()">Change Name</button>
+<button (click)="increaseAge()">Increase Age</button>
+
+<hr />
+
+<p><strong>Current Name:</strong> {{ nameSubject | async }}</p>
+<p><strong>Current Age:</strong> {{ ageSubject | async }}</p>
+
+
+<router-outlet />
