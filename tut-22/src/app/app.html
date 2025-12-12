@@ -1,0 +1,29 @@
+<h1>switchMap ki sabse simple definition (ek line mein):</h1>
+<h3 [ngStyle]="{'color':'red'}">Jo bhi naya value aaye, purane wale ka kaam cancel kar do aur sirf naye wale ka kaam karo!</h3>
+
+
+<h3 [ngStyle]="{'color':'red','background-color':'cyan','padding':'1rem','font-size':'1.5rem'}">Har baar naya input aaya → purana pending kaam cancel, sirf latest wala hi chalaao!</h3>
+
+
+<h2>Real life example (bilkul simple):</h2>
+<ul>
+  <li>Tu search box mein type kar raha hai:</li>
+  <li>
+"r" → API call shuru hua</li>
+  <li>
+"re" → "r" wala call cancel, "re" ka naya call shuru</li>
+  <li>"rea" → "re" wala cancel, "rea" ka call shuru</li>
+  <li>"react" → sirf iska result aayega, baaki sab cancel!</li>
+  <li>Toh switchMap = "Sirf latest hi boss hai, baaki sab ko bhool ja!"</li>
+</ul>
+
+
+
+
+
+
+
+<hr>
+<input #myinput type="text" placeholder="Type something...">
+
+<router-outlet />
